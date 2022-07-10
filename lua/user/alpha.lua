@@ -22,7 +22,8 @@ dashboard.section.buttons.val = {
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "chrisatmachine.com"
+  local datetime = os.date(" %d-%m-%Y   %H:%M:%S")
+  return datetime
 end
 
 dashboard.section.footer.val = footer()
