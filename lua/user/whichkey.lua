@@ -127,7 +127,10 @@ local mappings = {
       "Diff",
     },
   },
-
+  L = {
+    name = "Ledger",
+    t = {"<cmd>call ledger#transaction_state_toggle(line('.'), '*!')<CR>", "Toggle Entry"},
+  },
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
