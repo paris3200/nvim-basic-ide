@@ -44,7 +44,12 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
     vim.highlight.on_yank { higroup = "Visual", timeout = 200 }
   end,
 })
+
 vim.cmd [[
+  augroup _email_process
+    autocmd VimLeave /tmp/neomutt-* !/home/jason/bin/email_process %  
+  augroup end
+
   augroup _ledger
     autocmd BufWritePre *.ldg :LedgerAlignBuffer
   augroup end
