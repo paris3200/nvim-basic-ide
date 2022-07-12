@@ -3,4 +3,5 @@ if not status_ok then
   return
 end
 
-impatient.enable_profile()
+-- Must be disabled for mkdnflow
+--impatient.enable_profile()

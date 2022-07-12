@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use { "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" }
   use { "folke/which-key.nvim", commit = "bd4411a2ed4dd8bb69c125e339d837028a6eea71" }
   use { "ledger/vim-ledger"}
+  use { "jakewvincent/mkdnflow.nvim"} -- Manage/Navigate markdown notes
 
   -- Colorschemes
   use { "folke/tokyonight.nvim", commit = "8223c970677e4d88c9b6b6d81bda23daf11062bb" }
