@@ -59,6 +59,10 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 })
 
 vim.cmd [[
+  augroup _email_process
+    autocmd VimLeave /tmp/neomutt-* !/home/jason/bin/email_process %  
+  augroup end
+
   augroup _ledger
     autocmd BufWritePre *.ldg :LedgerAlignBuffer
   augroup end
