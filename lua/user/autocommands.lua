@@ -26,6 +26,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   callback = function()
     vim.opt_local.wrap = true
     vim.opt_local.spell = true
+    vim.opt_local.textwidth= 74
   end,
 })
 
@@ -53,4 +54,10 @@ vim.cmd [[
   augroup _ledger
     autocmd BufWritePre *.ldg :LedgerAlignBuffer
   augroup end
+  
+  augroup pencil
+    autocmd!
+    autocmd FileType markdown,mkd call pencil#init()
+    autocmd FileType text         call pencil#init()
+  augroup END
 ]]
