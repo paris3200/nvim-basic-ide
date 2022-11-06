@@ -18,8 +18,13 @@ dashboard.section.buttons.val = {
   dashboard.button("p", " " .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
   dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
   dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
+<<<<<<< HEAD
   dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
   dashboard.button("n", " " .. " Notes", ":e ~/notes/index.md <CR>"),
+=======
+  dashboard.button("c", " " .. " Config", ":e ~/.config/nvim/init.lua <CR>"),
+  dashboard.button("n", " " .. " Notes", ":e ~/resources/notes/index.md <CR>"),
+>>>>>>> 6ddc4d8 (Change location of notes)
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
