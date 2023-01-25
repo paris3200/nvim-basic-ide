@@ -63,6 +63,8 @@ return packer.startup(function(use)
   use { "danymat/neogen"}
   use { "ledger/vim-ledger"}
   use { "jakewvincent/mkdnflow.nvim"} -- Manage/Navigate markdown notes
+  use {'lervag/vimtex'}
+
 
   -- Colorschemes
   use "sainnhe/gruvbox-material" -- Gruvbox, but better
