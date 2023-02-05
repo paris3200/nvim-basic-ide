@@ -11,7 +11,7 @@ require('mkdnflow').setup({
         fallback = 'current',
         root_tell = 'index.md',
         nvim_wd_heel = true
-    },    
+    },
     wrap = false,
     bib = {
         default_path = nil,
