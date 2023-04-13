@@ -55,10 +55,6 @@ vim.cmd [[
     autocmd VimLeave /tmp/neomutt-* !/home/jason/bin/email_process %  
   augroup end
 
-  augroup _ledger
-    autocmd BufWritePre *.ldg :LedgerAlignBuffer
-  augroup end
-  
   augroup pencil
     autocmd!
     autocmd FileType markdown,mkd call pencil#init()
